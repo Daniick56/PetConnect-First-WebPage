@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Repo';
+    src: url(Assets/fonts/Repo.otf) format('truetype');
+}
+
+body {
+    font-family: 'Repo', sans-serif;
+    margin: 0%;
+}
+.title{
+    margin-top: -50px;
+    margin-right: 0px;
+}
+.container{
+    display: flex;
+    gap: 0px;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+.content{
+    display: block;
+    height: 550px;
+    width: 470px;
+}
+
+h1{
+    color: #0C3E5B;
+    margin-top: 100px;
+    margin-left: 60px;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista1 a img,
+.lista2 a img {
+
+    width: 56px;
+    height: 48px;
+    margin-right: 25px; 
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+
+.lista1,
+.lista2 {
+    display: inline-block;
+    vertical-align: top; 
+    margin: 60px; 
+    margin-top: 100px;
+    padding: 0; 
+}
+.lista1{
+    margin-top: 90px;
+}
+
+.lista1 li{
+    margin-bottom: 30px;
+}
+.lista2 li {
+    margin-bottom: 55px;
+}
+
+.lista1 a,
+.lista2 a {
+    display: flex;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #0C3E5B;
+    font-size: 20px;
+    border: 0px;
+    align-items: center;
+    box-shadow: 0px -20px 110px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.lista1 a::after,
+.lista2 a::after {
+    content: "\2192"; /* Código Unicode para una flecha hacia la derecha */
+    margin-left: 10px;
+    opacity: 0; /* Ocultar inicialmente la flecha */
+    transition: opacity 0.3s;
+}
+
+/* Mostrar la flecha al pasar el mouse */
+.lista1 a:hover::after,
+.lista2 a:hover::after {
+    opacity: 1;
+}
+
+.lista1 a:hover,
+.lista2 a:hover {
+    background-color: rgba(0, 162, 255, 0.288); /* Fondo transparente al pasar el mouse */
+    border-color: #0C3E5B; /* Cambia el color del borde al pasar el mouse */
+    color: #0C3E5B; /* Cambia el color del texto al pasar el mouse */
+}
+
+.lista2 a{
+    padding: 16px;
+}
+.lista1 a{
+    padding: 16px;
+}
+
+
+.points-image{
+    position: fixed; /* Fija la imagen en la ventana del navegador */
+    width: 150px;
+    height: 150px;
+    margin-left: 25px;
+    margin-top: 190px;
+}
+
+.corner{
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: bottom;
+}
+.corner-image{
+    width: 800px;
+    position: fixed;
+    bottom: 0; /* Colocar en la parte inferior */
+    right: 0; /* Colocar en el lado derecho */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+}
+
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #0C3E5B;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 70%;
+  line-height: 1.5px;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff); 
+ width: 120px;
+ height: 50px;
+ padding: 0%;
+ margin: 0;
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+
+.btn-53 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 600;
+  overflow: hidden;
+  padding:20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-53 .original {
+  background: #2aa2b8;
+  color: #fff;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+
+.btn-53 {
+    position: fixed; /* Fija el botón en la ventana del navegador */
+    top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo de la ventana */
+    margin: 0; /* Elimina cualquier margen existente */
+  }
+
+
+  .botonback{
+    text-align: center;
+  }
