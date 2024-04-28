@@ -106,14 +106,16 @@ ul {
     padding: 16px;
 }
 
-
-.points-image{
-    position: fixed; /* Fija la imagen en la ventana del navegador */
-    width: 150px;
-    height: 150px;
-    margin-left: 25px;
-    margin-top: 190px;
+.points-image {
+  position: fixed; /* Fija la posición de la imagen */
+  bottom: 0; /* La posiciona en la parte inferior */
+  left: 0; /* La posiciona en el lado izquierdo */
+  width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 150px; /* Ajusta la altura de la imagen según sea necesario */
+  margin: 20px; /* Ajusta el margen según sea necesario */
+  z-index: 999; /* Asegura que la imagen esté por encima de otros elementos */
 }
+
 
 .corner{
     display: flex;
