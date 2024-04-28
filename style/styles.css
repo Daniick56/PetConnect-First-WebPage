@@ -253,3 +253,23 @@ ul {
   .botonback{
     text-align: center;
   }
+
+  .contentSC{
+    display: auto;
+    margin: 50px 50px;
+    right: 10px;
+    text-align: justify;
+    z-index: 9999; /*se usa para asegurarse que este por encima de otros elementos*/
+  }
+
+  h3{
+    color: #0C3E5B;
+  }
+
+  .imagenSC{
+    height: 300px; /* Establece la altura de la imagen en 150px */
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    left: 50%; /* La mueve hacia la mitad del contenedor horizontalmente */
+    transform: translateX(-50%); /* Centra la imagen respecto a su propio tamaño */
+    top: 50px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
+  }
