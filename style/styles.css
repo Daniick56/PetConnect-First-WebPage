@@ -32,80 +32,7 @@ h1{
   margin-bottom: 0px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
 
-.lista1 a img,
-.lista2 a img {
-
-  width: 56px;
-  height: 48px;
-  margin-right: 25px; 
-  vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
-}
-
-.lista1,
-.lista2 {
-  display: inline-block;
-  vertical-align: top; 
-  margin: 60px; 
-  margin-top: 100px;
-  padding: 0; 
-}
-.lista1{
-  margin-top: 90px;
-}
-
-.lista1 li{
-  margin-bottom: 30px;
-}
-.lista2 li {
-  margin-bottom: 55px;
-}
-
-.lista1 a,
-.lista2 a {
-  display: flex;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: #0C3E5B;
-  font-size: 20px;
-  border: 0px;
-  align-items: center;
-  box-shadow: 0px -20px 110px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.lista1 a::after,
-.lista2 a::after {
-  content: "\2192"; /* Código Unicode para una flecha hacia la derecha */
-  margin-left: 10px;
-  opacity: 0; /* Ocultar inicialmente la flecha */
-  transition: opacity 0.3s;
-}
-
-/* Mostrar la flecha al pasar el mouse */
-.lista1 a:hover::after,
-.lista2 a:hover::after {
-  opacity: 1;
-}
-
-.lista1 a:hover,
-.lista2 a:hover {
-  background-color: rgba(0, 162, 255, 0.288); /* Fondo transparente al pasar el mouse */
-  border-color: #0C3E5B; /* Cambia el color del borde al pasar el mouse */
-  color: #0C3E5B; /* Cambia el color del texto al pasar el mouse */
-}
-
-.lista2 a{
-  padding: 16px;
-}
-.lista1 a{
-  padding: 16px;
-}
 
 .points-image {
 position: fixed; /* Fija la posición de la imagen */
@@ -305,8 +232,6 @@ h3{
 }
 
 
-
-
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -327,11 +252,35 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: -50PX;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .grid-item {
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: color 0.3s ease; /* Transición suave solo para el color */
+
+}
+.grid-item:hover {
+  transform: translateY(-5px); /* Desplazar hacia arriba al pasar el cursor */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Aumentar sombra en hover */
+  color: #000000; /* Cambiar color del texto al pasar el cursor */
+  background-color: #64cdd19a; /* Cambiar color de fondo al pasar el cursor */
+}
+a {
+  text-decoration: none;
+  
+}
+a:link{
+  color: #1e1e1e;
+}
+a:visited{
+  color: #232222;
 }
