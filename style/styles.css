@@ -293,6 +293,17 @@ ul {
     top: 50px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
   }
 
+  .contentEc {
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .costos {
+    display: block;
+    margin-left: 100px;
+  }
+
 
 
 
