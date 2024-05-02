@@ -17,8 +17,16 @@ body {
     margin-top: 0px;
     padding-top: 50px;
 }
+
+.containerSegundario{
+  display: flex;
+  gap: 50px;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
 .content{
-    display: block;
+    display: flex;
     height: 550px;
     width: 470px;
 }
@@ -107,9 +115,17 @@ ul {
 }
 
 .points-image {
-  position: fixed; /* Fija la posición de la imagen */
   bottom: 0; /* La posiciona en la parte inferior */
   left: 0; /* La posiciona en el lado izquierdo */
+  width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 150px; /* Ajusta la altura de la imagen según sea necesario */
+  margin: 20px; /* Ajusta el margen según sea necesario */
+  z-index: 999; /* Asegura que la imagen esté por encima de otros elementos */
+}
+
+.points-imageAC{
+  bottom:500; /* La posiciona en la parte inferior */
+  left: -5000; /* La posiciona en el lado izquierdo */
   width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
   height: 150px; /* Ajusta la altura de la imagen según sea necesario */
   margin: 20px; /* Ajusta el margen según sea necesario */
@@ -245,9 +261,8 @@ ul {
 }
 
 .btn-53 {
-    position: fixed; /* Fija el botón en la ventana del navegador */
-    top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
-    left: 20px; /* Ajusta la distancia desde el borde izquierdo de la ventana */
+    top: -1330px; /* Ajusta la distancia desde la parte superior de la ventana */
+    left: -1750px; /* Ajusta la distancia desde el borde izquierdo de la ventana */
     margin: 0; /* Elimina cualquier margen existente */
   }
 
@@ -257,11 +272,13 @@ ul {
   }
 
   .contentSC{
-    display: auto;
-    margin: 50px 50px;
-    right: 10px;
-    text-align: justify;
+    display: flex;
+    margin: 0px auto;
+    right: -7%;
+    flex-direction: column;
     z-index: 9999; /*se usa para asegurarse que este por encima de otros elementos*/
+    padding: 150px;
+    text-align: justify;
   }
 
   h3{
@@ -270,9 +287,9 @@ ul {
 
   .imagenSC{
     height: 300px; /* Establece la altura de la imagen en 150px */
-    position: relative; /* Posiciona la imagen de forma absoluta */
-    left: 50%; /* La mueve hacia la mitad del contenedor horizontalmente */
-    transform: translateX(-50%); /* Centra la imagen respecto a su propio tamaño */
+    position: flex; /* Posiciona la imagen de forma absoluta */
+    left: -500%; /* La mueve hacia la mitad del contenedor horizontalmente */
+ 
     top: 50px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
   }
 
@@ -291,3 +308,159 @@ ul {
     transform: translateX(-50%); /* Centra la imagen respecto a su propio tamaño */
     top: 50px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
   }
+
+
+  .titleSegundaria{
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+
+  .btn-53AC,
+  .btn-53AC *,
+  .btn-53AC :after,
+  .btn-53AC :before,
+  .btn-53AC:after,
+  .btn-53AC:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+  
+  .btn-53AC {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #0C3E5B;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 70%;
+    line-height: 1.5px;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff); 
+   width: 120px;
+   height: 50px;
+   padding: 0%;
+   margin: 0;
+  }
+  
+  .btn-53AC:disabled {
+    cursor: default;
+  }
+  
+  .btn-53AC:-moz-focusring {
+    outline: auto;
+  }
+  
+  .btn-53AC svg {
+    display: block;
+    vertical-align: middle;
+  }
+  
+  .btn-53AC [hidden] {
+    display: none;
+  }
+  
+  
+  .btn-53AC {
+    border: 1px solid;
+    border-radius: 999px;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 600;
+    overflow: hidden;
+    padding:20px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .btn-53AC .original {
+    background: #2aa2b8;
+    color: #fff;
+    display: grid;
+    inset: 0;
+    place-content: center;
+    position: absolute;
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+  }
+  
+  .btn-53AC:hover .original {
+    transform: translateY(100%);
+  }
+  
+  .btn-53AC .letters {
+    display: inline-flex;
+  }
+  
+  .btn-53AC span {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+  }
+  
+  .btn-53AC span:nth-child(2n) {
+    transform: translateY(15px);
+  }
+  
+  .btn-53AC:hover span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .btn-53AC:hover span:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  
+  .btn-53AC:hover span:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  
+  .btn-53AC:hover span:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  
+  .btn-53AC:hover span:nth-child(5) {
+    transition-delay: 0.4s;
+  }
+  
+  .btn-53AC:hover span:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+  
+  .btn-53AC {
+    position: fixed; /* Fija el botón en la ventana del navegador */
+    top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo de la ventana */
+    margin: 0; /* Elimina cualquier margen existente */
+    }
+  
+
+    .points-imageAC{
+      position: fixed; /* Fija la posición de la imagen */
+  bottom: 0; /* La posiciona en la parte inferior */
+  left: 0; /* La posiciona en el lado izquierdo */
+  width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 150px; /* Ajusta la altura de la imagen según sea necesario */
+  margin: 20px; /* Ajusta el margen según sea necesario */
+  z-index: 999; /* Asegura que la imagen esté por encima de otros elementos */
+    }
+
+
+    .contentAC{
+      display: flex;
+    margin: -160px auto;
+    right: -7%;
+    flex-direction: column;
+    z-index: 9999; /*se usa para asegurarse que este por encima de otros elementos*/
+    padding: 200px;
+    text-align: justify;
+    }
+
+    .tituloSC{
+      color: #0C3E5B;
+    margin-top: 110px;
+    margin-left: 60px;
+    font-size: 50px;
+    margin-bottom: 0px;
+    }
