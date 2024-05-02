@@ -17,11 +17,18 @@ body {
   margin-top: 0px;
   padding-top: 50px;
 }
+
+.containerSegundario{
+  display: flex;
+  gap: 50px;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
 .content{
-  display: block;
-  height: 550px;
-  width: 700px;
-  padding-left: 200px;
+    display: block;
+    height: 550px;
+    width: 470px;
 }
 
 h1{
@@ -108,13 +115,22 @@ ul {
 }
 
 .points-image {
-position: fixed; /* Fija la posición de la imagen */
-bottom: 0; /* La posiciona en la parte inferior */
-left: 0; /* La posiciona en el lado izquierdo */
-width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
-height: 150px; /* Ajusta la altura de la imagen según sea necesario */
-margin: 20px; /* Ajusta el margen según sea necesario */
-z-index: 999; /* Asegura que la imagen esté por encima de otros elementos */
+  position: fixed; /* Fija la posición de la imagen */
+  bottom: 0; /* La posiciona en la parte inferior */
+  left: 0; /* La posiciona en el lado izquierdo */
+  width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 150px; /* Ajusta la altura de la imagen según sea necesario */
+  margin: 20px; /* Ajusta el margen según sea necesario */
+  z-index: 999; /* Asegura que la imagen esté por encima de otros elementos */
+}
+
+.points-imageAC{
+  bottom:500; /* La posiciona en la parte inferior */
+  left: -5000; /* La posiciona en el lado izquierdo */
+  width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 150px; /* Ajusta la altura de la imagen según sea necesario */
+  margin: 20px; /* Ajusta el margen según sea necesario */
+  z-index: 999; /* Asegura que la imagen esté por encima de otros elementos */
 }
 
 
@@ -246,36 +262,36 @@ transition-delay: 0.5s;
 }
 
 .btn-53 {
-  position: fixed; /* Fija el botón en la ventana del navegador */
-  top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
-  left: 20px; /* Ajusta la distancia desde el borde izquierdo de la ventana */
-  margin: 0; /* Elimina cualquier margen existente */
-}
+    position: fixed; /* Fija el botón en la ventana del navegador */
+    top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo de la ventana */
+    margin: 0; /* Elimina cualquier margen existente */
+  }
 
 
 .botonback{
   text-align: center;
 }
 
-.contentSC{
-  display: auto;
-  margin: 50px 50px;
-  right: 10px;
-  text-align: justify;
-  z-index: 9999; /*se usa para asegurarse que este por encima de otros elementos*/
-}
+  .contentSC{
+    display: auto;
+    margin: 50px 50px;
+    right: 10px;
+    text-align: justify;
+    z-index: 9999; /*se usa para asegurarse que este por encima de otros elementos*/
+  }
 
 h3{
   color: #0C3E5B;
 }
 
-.imagenSC{
-  height: 300px; /* Establece la altura de la imagen en 150px */
-  position: relative; /* Posiciona la imagen de forma absoluta */
-  left: 50%; /* La mueve hacia la mitad del contenedor horizontalmente */
-  transform: translateX(-50%); /* Centra la imagen respecto a su propio tamaño */
-  top: 50px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
-}
+  .imagenSC{
+    height: 300px; /* Establece la altura de la imagen en 150px */
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    left: 50%; /* La mueve hacia la mitad del contenedor horizontalmente */
+    transform: translateX(-50%); /* Centra la imagen respecto a su propio tamaño */
+    top: 50px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
+  }
 
 .contentAC{
   display: auto;
@@ -285,53 +301,10 @@ h3{
   z-index: 9999; /*se usa para asegurarse que este por encima de otros elementos*/
 }
 
-.imagenAC{
-  height: 300px; /* Establece la altura de la imagen en 150px */
-  position: relative; /* Posiciona la imagen de forma absoluta */
-  left: 50%; /* La mueve hacia la mitad del contenedor horizontalmente */
-  transform: translateX(-50%); /* Centra la imagen respecto a su propio tamaño */
-  top: 50px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
-}
-
-.contentEc {
-  text-align: justify;
-  margin: 20px;
-  padding: 20px;
-}
-
-.costos {
-  display: block;
-  margin-left: 100px;
-}
-
-
-
-
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.grid-container {
-  width: 650px;
-  height: 580px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Define 3 columns with equal width */
-  gap: 10px; /* Add spacing between grid items */
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: -50PX;
-}
-
-.grid-item {
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  .imagenAC{
+    height: 300px; /* Establece la altura de la imagen en 150px */
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    left: 50%; /* La mueve hacia la mitad del contenedor horizontalmente */
+    transform: translateX(-50%); /* Centra la imagen respecto a su propio tamaño */
+    top: 50px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
+  }
