@@ -21,9 +21,9 @@ body {
 
 .containerSegundario{
   display: flex;
-  gap: 50px;
+  gap: 80px;
   margin-top: -50px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .content{
@@ -53,7 +53,7 @@ h1{
   z-index: 999; /* Asegura que la imagen esté por encima de otros elementos */
 }
 
-.points-imageAC{
+.points-imageSC{
   bottom:500; /* La posiciona en la parte inferior */
   left: -5000; /* La posiciona en el lado izquierdo */
   width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
@@ -135,6 +135,7 @@ overflow: hidden;
 padding:20px;
 position: relative;
 text-transform: uppercase;
+
 }
 
 .btn-53 .original {
@@ -191,9 +192,9 @@ transition-delay: 0.5s;
 }
 
 .btn-53 {
-    position: fixed; /* Fija el botón en la ventana del navegador */
-    top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
-    left: 20px; /* Ajusta la distancia desde el borde izquierdo de la ventana */
+   
+    top: -290px; /* Ajusta la distancia desde la parte superior de la ventana */
+    left: -1215px; /* Ajusta la distancia desde el borde izquierdo de la ventana */
     margin: 0; /* Elimina cualquier margen existente */
   }
 
@@ -204,7 +205,7 @@ transition-delay: 0.5s;
 
   .contentSC{
     display: auto;
-    margin: 50px 50px;
+    margin: -80px 50px;
     right: 10px;
     text-align: justify;
     z-index: 9999; /*se usa para asegurarse que este por encima de otros elementos*/
@@ -233,9 +234,9 @@ h3{
 .imagenAC{
   height: 300px; /* Establece la altura de la imagen en 150px */
   position: relative; /* Posiciona la imagen de forma absoluta */
-  left: 50%; /* La mueve hacia la mitad del contenedor horizontalmente */
+  left: 70%; /* La mueve hacia la mitad del contenedor horizontalmente */
   transform: translateX(-50%); /* Centra la imagen respecto a su propio tamaño */
-  top: 50px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
+  top: 200px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
 }
 
 .contentEc {
@@ -353,4 +354,29 @@ a:visited{
   margin-bottom: 0px;
   width: 70px;
   height: auto;
+}
+
+.titleSC{
+  margin-top: 500px;
+  margin-left: -20px;
+  padding-right: 0px;
+}
+
+.titleAC{
+  margin-top: 90px;
+  margin-left: -20px;
+  padding-right: 0px;
+}
+.containerSegundarioAC{
+  display: flex;
+  gap: 150px;
+  margin-top: -200px;
+  padding-top: 20px;
+}
+
+
+.titleRC{
+  margin-top: 400px;
+margin-left: -20px;
+padding-right: 0px;
 }
