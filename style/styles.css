@@ -8,6 +8,7 @@ body {
   margin: 0%;
 }
 .title{
+  font-family: 'Repo';
   margin-top: -70px;
   margin-left: -500px;
   padding-right: 200px;
@@ -239,15 +240,15 @@ h3{
   top: 200px /* Desplaza la imagen hacia abajo 50px desde la parte superior */
 }
 
-.contentEc {
+/*.contentEc {
   text-align: justify;
   margin: 20px;
   padding: 20px;
-}
+} */
 
 .costos {
   display: block;
-  margin-left: 100px;
+  margin-left: 180px;
 }
 
 
@@ -379,4 +380,47 @@ a:visited{
   margin-top: 400px;
 margin-left: -20px;
 padding-right: 0px;
+}
+
+.contentEC{
+  display: block;
+  margin: 600px 0px -150px 100px;
+  right: 10px;
+  text-align: justify;
+  z-index: 9999; /*se usa para asegurarse que este por encima de otros elementos*/
+}
+
+.titleEC{
+  font-family: 'Repo';
+  margin-top: 510px;
+  margin-left: -20px;
+  padding-right: 0px;
+}
+
+.estructuraCostosimg {
+  height: 350px;
+  margin-top: -10px;
+  margin-left: 40px;
+}
+
+
+.contentPV{
+  display: block;
+  margin: 90px 0px -150px 135px;
+  right: 10px;
+  text-align: justify;
+  z-index: 9999; /*se usa para asegurarse que este por encima de otros elementos*/
+}
+
+.titlePV{
+  font-family: 'Repo';
+  margin-top: 0px;
+  margin-left: -20px;
+  padding-right: 0px;
+}
+
+.propuestaValorImg {
+  height: 250px;
+  margin-top: 40px;
+  margin-left: 80px;
 }
