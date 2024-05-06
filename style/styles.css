@@ -13,6 +13,13 @@ body {
   margin-left: -500px;
   padding-right: 200px;
 }
+
+.title-relaciones{
+  font-family: 'Repo';
+  margin-top: -70px;
+  margin-left: -600px;
+}
+
 .container{
   display: flex;
   gap: 0px;
