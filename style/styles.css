@@ -434,3 +434,9 @@ padding-right: 0px;
   margin-top: 40px;
   margin-left: 80px;
 }
+
+.content-clave,
+.content-ingresos,
+.content-relaciones {
+  margin-left: 40px;
+}
